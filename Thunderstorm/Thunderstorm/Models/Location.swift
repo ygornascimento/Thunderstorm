@@ -29,4 +29,8 @@ extension Location {
     static var previewData: Data {
         try! JSONEncoder().encode(Location.previews)
     }
+    
+    static var preview: Location {
+        previews[0]
+    }
 }
