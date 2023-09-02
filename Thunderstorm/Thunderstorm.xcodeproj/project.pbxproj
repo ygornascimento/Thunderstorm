@@ -12,6 +12,8 @@
 		1E4C09642AA3B04C0094244C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C09632AA3B04C0094244C /* Preview Assets.xcassets */; };
 		1E4C096F2AA3B1BF0094244C /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C096E2AA3B1BF0094244C /* LocationsView.swift */; };
 		1E4C09722AA3B2170094244C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09712AA3B2170094244C /* LocationsViewModel.swift */; };
+		1E4C09752AA3BE2B0094244C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09742AA3BE2B0094244C /* Location.swift */; };
+		1E4C09772AA3C3D20094244C /* LocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09762AA3C3D20094244C /* LocationCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		1E4C09632AA3B04C0094244C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E4C096E2AA3B1BF0094244C /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		1E4C09712AA3B2170094244C /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		1E4C09742AA3BE2B0094244C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		1E4C09762AA3C3D20094244C /* LocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		1E4C095B2AA3B04B0094244C /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				1E4C09732AA3BE120094244C /* Models */,
 				1E4C096C2AA3B09D0094244C /* App */,
 				1E4C096B2AA3B0820094244C /* Views */,
 				1E4C096A2AA3B0780094244C /* Resources */,
@@ -106,8 +111,17 @@
 			isa = PBXGroup;
 			children = (
 				1E4C09712AA3B2170094244C /* LocationsViewModel.swift */,
+				1E4C09762AA3C3D20094244C /* LocationCellViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E4C09732AA3BE120094244C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E4C09742AA3BE2B0094244C /* Location.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +196,9 @@
 			files = (
 				1E4C096F2AA3B1BF0094244C /* LocationsView.swift in Sources */,
 				1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */,
+				1E4C09752AA3BE2B0094244C /* Location.swift in Sources */,
 				1E4C09722AA3B2170094244C /* LocationsViewModel.swift in Sources */,
+				1E4C09772AA3C3D20094244C /* LocationCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
