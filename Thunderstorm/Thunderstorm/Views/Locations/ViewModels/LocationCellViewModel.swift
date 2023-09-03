@@ -11,6 +11,10 @@ struct LocationCellViewModel: Identifiable {
     
     private let location: Location
     
+    var locationViewModel: LocationViewModel {
+        .init(location: location)
+    }
+    
     var id: String {
         location.id
     }
