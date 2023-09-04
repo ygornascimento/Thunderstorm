@@ -11,7 +11,14 @@ struct ForecastView: View {
     
     let viewModel: ForecastViewModel
     var body: some View {
-        Text("Forecast View")
+        ScrollView {
+            LazyVGrid(columns: [GridItem()]) {
+                ForEach(viewModel.forecastCellViewModels) { viewModel in
+                    ForecastCell(viewModel: viewModel)
+                }
+            }
+            .padding()
+        }
     }
 }
 

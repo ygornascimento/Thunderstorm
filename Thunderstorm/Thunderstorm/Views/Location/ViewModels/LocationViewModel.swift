@@ -20,6 +20,10 @@ struct LocationViewModel {
         .init()
     }
     
+    var locationName: String {
+        location.name
+    }
+    
     init(location: Location) {
         self.location = location
     }

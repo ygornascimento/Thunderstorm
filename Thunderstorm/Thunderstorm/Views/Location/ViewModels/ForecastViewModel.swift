@@ -9,5 +9,7 @@ import Foundation
 
 
 struct ForecastViewModel {
-    
+    var forecastCellViewModels: [ForecastCellViewModel] {
+        (0..<10).map { _ in ForecastCellViewModel() }
+    }
 }
