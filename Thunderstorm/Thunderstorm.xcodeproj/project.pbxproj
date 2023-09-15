@@ -23,6 +23,7 @@
 		1E4C09892AA544C90094244C /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09882AA544C90094244C /* ForecastViewModel.swift */; };
 		1E4C098B2AA553140094244C /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C098A2AA553140094244C /* ForecastCell.swift */; };
 		1E4C098D2AA55C960094244C /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C098C2AA55C960094244C /* ForecastCellViewModel.swift */; };
+		1EA416792AB46B17003E5ADD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA416782AB46B17003E5ADD /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		1E4C09882AA544C90094244C /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		1E4C098A2AA553140094244C /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		1E4C098C2AA55C960094244C /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
+		1EA416782AB46B17003E5ADD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4C09602AA3B04C0094244C /* Assets.xcassets */,
+				1EA416782AB46B17003E5ADD /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E4C09792AA3D66A0094244C /* LocationCell.swift in Sources */,
+				1EA416792AB46B17003E5ADD /* Colors.swift in Sources */,
 				1E4C096F2AA3B1BF0094244C /* LocationsView.swift in Sources */,
 				1E4C09872AA544BE0094244C /* ForecastView.swift in Sources */,
 				1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */,
