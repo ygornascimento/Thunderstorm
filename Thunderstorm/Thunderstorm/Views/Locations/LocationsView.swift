@@ -11,10 +11,20 @@ struct LocationsView: View {
     
     let viewModel: LocationsViewModel
     
+    @State private var showsAddLocationView = false
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: [GridItem()], spacing: 20.0) {
+                    Button(viewModel.addLocationTitle) {
+                        showsAddLocationView.toggle()
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.accentColor)
+                    .clipShape(Capsule())
+                    
                     ForEach(viewModel.locationCellViewModels) { viewModel in
                         NavigationLink {
                             LocationView(viewModel: viewModel.locationViewModel)
@@ -27,6 +37,9 @@ struct LocationsView: View {
                 .padding()
             }
             .navigationTitle("Thunderstorm")
+            .sheet(isPresented: $showsAddLocationView) {
+                AddLocationView(viewModel: .init())
+            }
         }
     }
 }
