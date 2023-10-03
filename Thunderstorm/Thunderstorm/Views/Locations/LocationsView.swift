@@ -38,7 +38,7 @@ struct LocationsView: View {
             }
             .navigationTitle("Thunderstorm")
             .sheet(isPresented: $showsAddLocationView) {
-                AddLocationView(viewModel: .init())
+                AddLocationView(viewModel: .init(), showsAddLocationView: $showsAddLocationView)
             }
         }
     }

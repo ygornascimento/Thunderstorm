@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct AddLocationCellViewModel {
+struct AddLocationCellViewModel: Identifiable {
     
+    var id: String {
+        location.id
+    }
     private let location: Location
     
     init(location: Location) {
