@@ -23,6 +23,9 @@
 		1E4C09892AA544C90094244C /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09882AA544C90094244C /* ForecastViewModel.swift */; };
 		1E4C098B2AA553140094244C /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C098A2AA553140094244C /* ForecastCell.swift */; };
 		1E4C098D2AA55C960094244C /* ForecastCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C098C2AA55C960094244C /* ForecastCellViewModel.swift */; };
+		1E7528FF2ACD7C2A00B20066 /* GeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7528FE2ACD7C2A00B20066 /* GeocodingService.swift */; };
+		1E7529012ACD7C9C00B20066 /* GeocodePreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7529002ACD7C9C00B20066 /* GeocodePreviewClient.swift */; };
+		1E7529032ACD7CFC00B20066 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7529022ACD7CFC00B20066 /* GeocodingClient.swift */; };
 		1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9927042ACB58CF00F9103C /* AddLocationCell.swift */; };
 		1E9927072ACB5DB400F9103C /* AddLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9927062ACB5DB400F9103C /* AddLocationCellViewModel.swift */; };
 		1EA416792AB46B17003E5ADD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA416782AB46B17003E5ADD /* Colors.swift */; };
@@ -48,6 +51,9 @@
 		1E4C09882AA544C90094244C /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		1E4C098A2AA553140094244C /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		1E4C098C2AA55C960094244C /* ForecastCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCellViewModel.swift; sourceTree = "<group>"; };
+		1E7528FE2ACD7C2A00B20066 /* GeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingService.swift; sourceTree = "<group>"; };
+		1E7529002ACD7C9C00B20066 /* GeocodePreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodePreviewClient.swift; sourceTree = "<group>"; };
+		1E7529022ACD7CFC00B20066 /* GeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 		1E9927042ACB58CF00F9103C /* AddLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCell.swift; sourceTree = "<group>"; };
 		1E9927062ACB5DB400F9103C /* AddLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModel.swift; sourceTree = "<group>"; };
 		1EA416782AB46B17003E5ADD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		1E4C095B2AA3B04B0094244C /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				1E7528FD2ACD7B6B00B20066 /* Geocoding */,
 				1E4C09732AA3BE120094244C /* Models */,
 				1E4C096C2AA3B09D0094244C /* App */,
 				1E4C096B2AA3B0820094244C /* Views */,
@@ -179,6 +186,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		1E7528FD2ACD7B6B00B20066 /* Geocoding */ = {
+			isa = PBXGroup;
+			children = (
+				1E7528FE2ACD7C2A00B20066 /* GeocodingService.swift */,
+				1E7529002ACD7C9C00B20066 /* GeocodePreviewClient.swift */,
+				1E7529022ACD7CFC00B20066 /* GeocodingClient.swift */,
+			);
+			path = Geocoding;
+			sourceTree = "<group>";
+		};
 		1EF180042AB5B32800E165C9 /* AddLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +286,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */,
+				1E7529012ACD7C9C00B20066 /* GeocodePreviewClient.swift in Sources */,
+				1E7528FF2ACD7C2A00B20066 /* GeocodingService.swift in Sources */,
 				1E4C09792AA3D66A0094244C /* LocationCell.swift in Sources */,
 				1E9927072ACB5DB400F9103C /* AddLocationCellViewModel.swift in Sources */,
 				1EA416792AB46B17003E5ADD /* Colors.swift in Sources */,
@@ -280,6 +299,7 @@
 				1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */,
 				1E4C097C2AA542490094244C /* LocationView.swift in Sources */,
 				1E4C09832AA544360094244C /* CurrentConditionsView.swift in Sources */,
+				1E7529032ACD7CFC00B20066 /* GeocodingClient.swift in Sources */,
 				1E4C09722AA3B2170094244C /* LocationsViewModel.swift in Sources */,
 				1E4C098D2AA55C960094244C /* ForecastCellViewModel.swift in Sources */,
 				1E4C09892AA544C90094244C /* ForecastViewModel.swift in Sources */,
