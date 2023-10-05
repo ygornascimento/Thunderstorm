@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AddLocationCellViewModel: Identifiable {
+struct AddLocationCellViewModel: Identifiable, Equatable {
     
     var id: String {
         location.id
