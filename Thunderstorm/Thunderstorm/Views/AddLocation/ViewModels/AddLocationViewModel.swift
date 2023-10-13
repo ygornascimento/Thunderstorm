@@ -46,6 +46,12 @@ internal final class AddLocationViewModel: ObservableObject {
             return
         }
         
+        do {
+            try UserDefaults.standard.addLocation(locations)
+        } catch {
+            print("Unable to add Location \(error)")
+        }
+        
         //Add Location
     }
     
