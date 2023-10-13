@@ -34,6 +34,9 @@
 		1EF180062AB5B35100E165C9 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180052AB5B35100E165C9 /* AddLocationView.swift */; };
 		1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */; };
 		1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */; };
+		1EFD9D7A2AD9E97B0024D091 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D792AD9E97B0024D091 /* Store.swift */; };
+		1EFD9D7C2AD9EA0C0024D091 /* UserDefaults+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D7B2AD9EA0C0024D091 /* UserDefaults+Store.swift */; };
+		1EFD9D7E2AD9EAB60024D091 /* PreviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D7D2AD9EAB60024D091 /* PreviewStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		1EF180052AB5B35100E165C9 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 		1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
+		1EFD9D792AD9E97B0024D091 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1EFD9D7B2AD9EA0C0024D091 /* UserDefaults+Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Store.swift"; sourceTree = "<group>"; };
+		1EFD9D7D2AD9EAB60024D091 /* PreviewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 		1E4C095B2AA3B04B0094244C /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				1EFD9D782AD9E9620024D091 /* Store */,
 				1E7529062ACD9B6900B20066 /* Extensions */,
 				1E7528FD2ACD7B6B00B20066 /* Geocoding */,
 				1E4C09732AA3BE120094244C /* Models */,
@@ -232,6 +239,16 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		1EFD9D782AD9E9620024D091 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1EFD9D792AD9E97B0024D091 /* Store.swift */,
+				1EFD9D7B2AD9EA0C0024D091 /* UserDefaults+Store.swift */,
+				1EFD9D7D2AD9EAB60024D091 /* PreviewStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,12 +320,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */,
+				1EFD9D7C2AD9EA0C0024D091 /* UserDefaults+Store.swift in Sources */,
 				1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */,
 				1E7529012ACD7C9C00B20066 /* GeocodePreviewClient.swift in Sources */,
 				1E7528FF2ACD7C2A00B20066 /* GeocodingService.swift in Sources */,
 				1E4C09792AA3D66A0094244C /* LocationCell.swift in Sources */,
 				1E9927072ACB5DB400F9103C /* AddLocationCellViewModel.swift in Sources */,
 				1EA416792AB46B17003E5ADD /* Colors.swift in Sources */,
+				1EFD9D7A2AD9E97B0024D091 /* Store.swift in Sources */,
 				1E7529082ACD9B8F00B20066 /* CLGeocoder+Geocoder.swift in Sources */,
 				1E4C096F2AA3B1BF0094244C /* LocationsView.swift in Sources */,
 				1E4C09872AA544BE0094244C /* ForecastView.swift in Sources */,
@@ -316,6 +335,7 @@
 				1E4C09752AA3BE2B0094244C /* Location.swift in Sources */,
 				1E7529052ACD98E500B20066 /* Geocoder.swift in Sources */,
 				1E4C09852AA544420094244C /* CurrentConditionViewModel.swift in Sources */,
+				1EFD9D7E2AD9EAB60024D091 /* PreviewStore.swift in Sources */,
 				1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */,
 				1E4C097C2AA542490094244C /* LocationView.swift in Sources */,
 				1E4C09832AA544360094244C /* CurrentConditionsView.swift in Sources */,

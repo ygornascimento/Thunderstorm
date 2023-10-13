@@ -18,6 +18,7 @@ internal final class AddLocationViewModel: ObservableObject {
         case results([AddLocationCellViewModel])
     }
     
+    private let store: Store
     private let geocodingService: GeocodingService
     
     @Published private(set) var state: State = .empty
@@ -35,7 +36,10 @@ internal final class AddLocationViewModel: ObservableObject {
     
     private var subscriptions: Set<AnyCancellable> = []
     
-    init(geocodingService: GeocodingService) {
+    init(store: Store,
+        geocodingService: GeocodingService
+    ) {
+        self.store = store
         self.geocodingService = geocodingService
         
         setupBindings()
@@ -47,7 +51,7 @@ internal final class AddLocationViewModel: ObservableObject {
         }
         
         do {
-            try UserDefaults.standard.addLocation(locations)
+            try store.addLocation(locations)
         } catch {
             print("Unable to add Location \(error)")
         }

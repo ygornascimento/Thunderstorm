@@ -50,6 +50,6 @@ struct LocationsView: View {
 
 struct LocationsView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationsView(viewModel: .init())
+        LocationsView(viewModel: .init(store: PreviewStore()))
     }
 }
