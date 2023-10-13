@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LocationsView: View {
     
-    let viewModel: LocationsViewModel
+    @ObservedObject private(set) var viewModel: LocationsViewModel
     
     @State private var showsAddLocationView = false
     
@@ -40,6 +40,10 @@ struct LocationsView: View {
             .sheet(isPresented: $showsAddLocationView) {
                 AddLocationView(viewModel: viewModel.addLocationViewModel, showsAddLocationView: $showsAddLocationView)
             }
+        }
+        
+        .onAppear {
+            viewModel.start()
         }
     }
 }

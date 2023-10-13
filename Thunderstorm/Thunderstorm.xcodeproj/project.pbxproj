@@ -33,6 +33,7 @@
 		1EA416792AB46B17003E5ADD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA416782AB46B17003E5ADD /* Colors.swift */; };
 		1EF180062AB5B35100E165C9 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180052AB5B35100E165C9 /* AddLocationView.swift */; };
 		1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */; };
+		1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		1EA416782AB46B17003E5ADD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1EF180052AB5B35100E165C9 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
+		1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				1E7529072ACD9B8F00B20066 /* CLGeocoder+Geocoder.swift */,
+				1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */,
+				1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */,
 				1E7529012ACD7C9C00B20066 /* GeocodePreviewClient.swift in Sources */,
 				1E7528FF2ACD7C2A00B20066 /* GeocodingService.swift in Sources */,
 				1E4C09792AA3D66A0094244C /* LocationCell.swift in Sources */,
