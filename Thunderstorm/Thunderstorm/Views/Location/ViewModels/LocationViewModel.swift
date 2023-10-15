@@ -13,7 +13,7 @@ struct LocationViewModel {
     private let location: Location
     
     var currentConditionsViewModel: CurrentConditionViewModel {
-        .init()
+        .init(currently: WeatherData.preview.currently)
     }
     
     var forecastViewModel: ForecastViewModel {
