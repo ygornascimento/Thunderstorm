@@ -14,6 +14,7 @@
 		1E1184D52ADB3B1F00A8FE6C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184D42ADB3B1F00A8FE6C /* WeatherService.swift */; };
 		1E1184D72ADB3C8500A8FE6C /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184D62ADB3C8500A8FE6C /* WeatherClient.swift */; };
 		1E1184D92ADB429300A8FE6C /* WeatherPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184D82ADB429300A8FE6C /* WeatherPreviewClient.swift */; };
+		1E1184DC2ADC1C2B00A8FE6C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */; };
 		1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C095C2AA3B04B0094244C /* ThunderstormApp.swift */; };
 		1E4C09612AA3B04C0094244C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C09602AA3B04C0094244C /* Assets.xcassets */; };
 		1E4C09642AA3B04C0094244C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C09632AA3B04C0094244C /* Preview Assets.xcassets */; };
@@ -54,6 +55,8 @@
 		1E1184D42ADB3B1F00A8FE6C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		1E1184D62ADB3C8500A8FE6C /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 		1E1184D82ADB429300A8FE6C /* WeatherPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPreviewClient.swift; sourceTree = "<group>"; };
+		1E1184DA2ADC1B4200A8FE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		1E4C09592AA3B04B0094244C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4C095C2AA3B04B0094244C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
 		1E4C09602AA3B04C0094244C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				1E1184D12ADB2DE200A8FE6C /* ClearSkyDecoder.swift */,
+				1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -135,6 +139,7 @@
 		1E4C095B2AA3B04B0094244C /* Thunderstorm */ = {
 			isa = PBXGroup;
 			children = (
+				1E1184DA2ADC1B4200A8FE6C /* Info.plist */,
 				1E1184D32ADB3B1300A8FE6C /* Weather */,
 				1E1184D02ADB2DD100A8FE6C /* Utilities */,
 				1EFD9D782AD9E9620024D091 /* Store */,
@@ -373,6 +378,7 @@
 				1E4C09872AA544BE0094244C /* ForecastView.swift in Sources */,
 				1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */,
 				1E4C09752AA3BE2B0094244C /* Location.swift in Sources */,
+				1E1184DC2ADC1C2B00A8FE6C /* Configuration.swift in Sources */,
 				1E1184D52ADB3B1F00A8FE6C /* WeatherService.swift in Sources */,
 				1E7529052ACD98E500B20066 /* Geocoder.swift in Sources */,
 				1E4C09852AA544420094244C /* CurrentConditionViewModel.swift in Sources */,
@@ -516,12 +522,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
+				CLEAR_SKY_BASE_URL = "https//cocoacasts.com/clearsky";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
 				DEVELOPMENT_TEAM = SD9543ZPA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thunderstorm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -545,12 +554,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
+				CLEAR_SKY_BASE_URL = "https//cocoacasts.com/clearsky";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
 				DEVELOPMENT_TEAM = SD9543ZPA4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Thunderstorm/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
