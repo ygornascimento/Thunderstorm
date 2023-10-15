@@ -20,7 +20,7 @@ final class WeatherClient: WeatherService {
         
         let url = baseURL.appending(queryItems: queryItems)
         let request = URLRequest(url: url)
-        let (data, _) = try await URLSession.shared.data(from: request)
+        let (data, _) = try await URLSession.shared.data(for: request)
         
         return try ClearSkyDecoder().decode(WeatherData.self, from: data)
     }
