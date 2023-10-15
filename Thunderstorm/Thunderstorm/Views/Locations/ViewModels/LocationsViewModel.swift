@@ -12,6 +12,7 @@ import Combine
 final class LocationsViewModel: ObservableObject {
     
     private let store: Store
+    private let weatherService: WeatherService
     
     var title: String {
         "Thunderstorm"
@@ -27,13 +28,19 @@ final class LocationsViewModel: ObservableObject {
         AddLocationViewModel(store: store, geocodingService: GeocodingClient())
     }
     
-    init(store: Store) {
+    init(store: Store, weatherService: WeatherService) {
         self.store = store
+        self.weatherService = weatherService
     }
     
     func start() {
+        let weatherService = self.weatherService
         store.locationsPublisher
-            .map {  $0.map(LocationCellViewModel.init(location:)) }
+            .map { locations in
+                locations.map { location in
+                        LocationCellViewModel(location: location, weatherService: weatherService)
+                }
+            }
             .eraseToAnyPublisher()
             .assign(to: &$locationCellViewModels)
     }
