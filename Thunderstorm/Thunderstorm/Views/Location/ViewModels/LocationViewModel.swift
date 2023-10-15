@@ -17,7 +17,7 @@ struct LocationViewModel {
     }
     
     var forecastViewModel: ForecastViewModel {
-        .init()
+        .init(forecast: WeatherData.preview.forecast)
     }
     
     var locationName: String {
