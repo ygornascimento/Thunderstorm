@@ -16,7 +16,7 @@ final class LocationCellViewModel: Identifiable, ObservableObject {
     @Published private var weatherData: WeatherData?
     
     var locationViewModel: LocationViewModel {
-        .init(location: location)
+        .init(location: location, weatherService: weatherService)
     }
     
     private let measurementFormatter = ClearSkyFormatter()
