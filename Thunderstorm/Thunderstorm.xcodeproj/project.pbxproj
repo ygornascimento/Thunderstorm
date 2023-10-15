@@ -15,6 +15,8 @@
 		1E1184D72ADB3C8500A8FE6C /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184D62ADB3C8500A8FE6C /* WeatherClient.swift */; };
 		1E1184D92ADB429300A8FE6C /* WeatherPreviewClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184D82ADB429300A8FE6C /* WeatherPreviewClient.swift */; };
 		1E1184DC2ADC1C2B00A8FE6C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */; };
+		1E1184DE2ADC5E1100A8FE6C /* ClearSkyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184DD2ADC5E1100A8FE6C /* ClearSkyFormatter.swift */; };
+		1E1184EE2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1184ED2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift */; };
 		1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C095C2AA3B04B0094244C /* ThunderstormApp.swift */; };
 		1E4C09612AA3B04C0094244C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C09602AA3B04C0094244C /* Assets.xcassets */; };
 		1E4C09642AA3B04C0094244C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E4C09632AA3B04C0094244C /* Preview Assets.xcassets */; };
@@ -47,6 +49,16 @@
 		1EFD9D7E2AD9EAB60024D091 /* PreviewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D7D2AD9EAB60024D091 /* PreviewStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1E1184E72ADC613100A8FE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E4C09512AA3B04B0094244C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E4C09582AA3B04B0094244C;
+			remoteInfo = Thunderstorm;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1E1184CA2ADB247300A8FE6C /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		1E1184CC2ADB2C7A00A8FE6C /* clearsky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clearsky.json; sourceTree = "<group>"; };
@@ -57,6 +69,9 @@
 		1E1184D82ADB429300A8FE6C /* WeatherPreviewClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPreviewClient.swift; sourceTree = "<group>"; };
 		1E1184DA2ADC1B4200A8FE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1E1184DD2ADC5E1100A8FE6C /* ClearSkyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatter.swift; sourceTree = "<group>"; };
+		1E1184E32ADC613100A8FE6C /* ThunderstormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThunderstormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E1184ED2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSkyFormatterTests.swift; sourceTree = "<group>"; };
 		1E4C09592AA3B04B0094244C /* Thunderstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thunderstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E4C095C2AA3B04B0094244C /* ThunderstormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThunderstormApp.swift; sourceTree = "<group>"; };
 		1E4C09602AA3B04C0094244C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +106,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E1184E02ADC613100A8FE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E4C09562AA3B04B0094244C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -106,6 +128,7 @@
 			children = (
 				1E1184D12ADB2DE200A8FE6C /* ClearSkyDecoder.swift */,
 				1E1184DB2ADC1C2B00A8FE6C /* Configuration.swift */,
+				1E1184DD2ADC5E1100A8FE6C /* ClearSkyFormatter.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -120,10 +143,27 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		1E1184E42ADC613100A8FE6C /* ThunderstormTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E1184EC2ADC614900A8FE6C /* Cases */,
+			);
+			path = ThunderstormTests;
+			sourceTree = "<group>";
+		};
+		1E1184EC2ADC614900A8FE6C /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				1E1184ED2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift */,
+			);
+			path = Cases;
+			sourceTree = "<group>";
+		};
 		1E4C09502AA3B04B0094244C = {
 			isa = PBXGroup;
 			children = (
 				1E4C095B2AA3B04B0094244C /* Thunderstorm */,
+				1E1184E42ADC613100A8FE6C /* ThunderstormTests */,
 				1E4C095A2AA3B04B0094244C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4C09592AA3B04B0094244C /* Thunderstorm.app */,
+				1E1184E32ADC613100A8FE6C /* ThunderstormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +335,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E1184E22ADC613100A8FE6C /* ThunderstormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E1184E92ADC613100A8FE6C /* Build configuration list for PBXNativeTarget "ThunderstormTests" */;
+			buildPhases = (
+				1E1184DF2ADC613100A8FE6C /* Sources */,
+				1E1184E02ADC613100A8FE6C /* Frameworks */,
+				1E1184E12ADC613100A8FE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E1184E82ADC613100A8FE6C /* PBXTargetDependency */,
+			);
+			name = ThunderstormTests;
+			productName = ThunderstormTests;
+			productReference = 1E1184E32ADC613100A8FE6C /* ThunderstormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1E4C09582AA3B04B0094244C /* Thunderstorm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E4C09672AA3B04C0094244C /* Build configuration list for PBXNativeTarget "Thunderstorm" */;
@@ -318,9 +377,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					1E1184E22ADC613100A8FE6C = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+						TestTargetID = 1E4C09582AA3B04B0094244C;
+					};
 					1E4C09582AA3B04B0094244C = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -340,11 +404,19 @@
 			projectRoot = "";
 			targets = (
 				1E4C09582AA3B04B0094244C /* Thunderstorm */,
+				1E1184E22ADC613100A8FE6C /* ThunderstormTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E1184E12ADC613100A8FE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E4C09572AA3B04B0094244C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +430,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E1184DF2ADC613100A8FE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1184EE2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E4C09552AA3B04B0094244C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +454,7 @@
 				1EA416792AB46B17003E5ADD /* Colors.swift in Sources */,
 				1EFD9D7A2AD9E97B0024D091 /* Store.swift in Sources */,
 				1E7529082ACD9B8F00B20066 /* CLGeocoder+Geocoder.swift in Sources */,
+				1E1184DE2ADC5E1100A8FE6C /* ClearSkyFormatter.swift in Sources */,
 				1E4C096F2AA3B1BF0094244C /* LocationsView.swift in Sources */,
 				1E4C09872AA544BE0094244C /* ForecastView.swift in Sources */,
 				1E4C095D2AA3B04B0094244C /* ThunderstormApp.swift in Sources */,
@@ -402,7 +483,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1E1184E82ADC613100A8FE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E4C09582AA3B04B0094244C /* Thunderstorm */;
+			targetProxy = 1E1184E72ADC613100A8FE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1E1184EA2ADC613100A8FE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD9543ZPA4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itlabs.tec.br.Thunderstorm.ThunderstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thunderstorm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thunderstorm";
+			};
+			name = Debug;
+		};
+		1E1184EB2ADC613100A8FE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD9543ZPA4;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itlabs.tec.br.Thunderstorm.ThunderstormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Thunderstorm.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Thunderstorm";
+			};
+			name = Release;
+		};
 		1E4C09652AA3B04C0094244C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -584,6 +723,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E1184E92ADC613100A8FE6C /* Build configuration list for PBXNativeTarget "ThunderstormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E1184EA2ADC613100A8FE6C /* Debug */,
+				1E1184EB2ADC613100A8FE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1E4C09542AA3B04B0094244C /* Build configuration list for PBXProject "Thunderstorm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
