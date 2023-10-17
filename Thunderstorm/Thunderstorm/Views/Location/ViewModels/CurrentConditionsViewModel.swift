@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct CurrentConditionViewModel {
+struct CurrentConditionsViewModel {
     
     private let currently: WeatherData.CurrentConditions
     private let measurementFormatter = ClearSkyFormatter()

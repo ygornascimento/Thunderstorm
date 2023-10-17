@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CurrentConditionsView: View {
     
-    let viewModel: CurrentConditionViewModel
+    let viewModel: CurrentConditionsViewModel
     var body: some View {
         VStack(alignment: .leading) {
             Text(viewModel.temperature)
