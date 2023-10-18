@@ -2,21 +2,21 @@
 
 App used to learn and improve the following hard skills:
 
-_*Swift*_
+__Swift__
 
-_*SwiftUI*_
+__SwiftUI__
 
-_*MVVM*_
+__MVVM__
 
-_*Combine*_
+__Combine__
 
-_*Concurrency (Async Await)*_
+__Concurrency (Async Await)__
 
-_*Apple Geocode framework*_
+__Apple Geocode framework__
 
-_*Apple UserDefaults framework*_
+__Apple UserDefaults framework__
 
-_*Dependency Injection with SwiftInject*_
+__Dependency Injection with SwiftInject__
 
 
 This app was made following the __*Mastering MVVM with SwiftUI*__ course from cocoacasts.com  
