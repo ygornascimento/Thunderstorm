@@ -15,8 +15,8 @@ extension UIColor {
     }
 }
 
-extension Color {
-    static var darkGray:  Color {
-        .init(uiColor: .darkGray)
-    }
-}
+//extension Color {
+//    static var darkGray:  Color {
+//        .init(uiColor: .darkGray)
+//    }
+//}

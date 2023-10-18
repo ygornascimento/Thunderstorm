@@ -20,5 +20,9 @@ final class PreviewStore: Store {
         locations.append(location)
     }
     
+    func removeLocation(_ location: Location) throws {
+        locations.removeAll { $0.id == location.id }
+    }
+    
     
 }

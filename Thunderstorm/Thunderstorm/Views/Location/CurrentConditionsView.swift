@@ -11,23 +11,35 @@ struct CurrentConditionsView: View {
     
     let viewModel: CurrentConditionsViewModel
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(viewModel.temperature)
-                .font(.largeTitle)
-            
-            Group {
-                HStack {
-                    Image(systemName: "wind")
-                        .foregroundColor(.gray)
-                    Text(viewModel.windSpeed)
-                }
+        HStack {
+            VStack(alignment: .leading) {
+                Text(viewModel.temperature)
+                    .font(.largeTitle)
                 
-                Spacer()
-                    .frame(height: 10.0)
-                Text(viewModel.summary)
+                Group {
+                    HStack {
+                        Image(systemName: "wind")
+                            .foregroundColor(.gray)
+                        Text(viewModel.windSpeed)
+                    }
+                    
+                    Spacer()
+                        .frame(height: 10.0)
+                    Text(viewModel.summary)
+                }
+            }
+            
+            .padding()
+            
+            Spacer()
+            
+            Button {
+//                viewModel.delete()
+            } label: {
+                Image(systemName: "trash")
+                    .foregroundColor(.accentColor)
             }
         }
-        .padding()
     }
 }
 

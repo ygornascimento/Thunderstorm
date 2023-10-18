@@ -33,6 +33,18 @@ extension UserDefaults {
         
         try encode(locations, forKey: Keys.locations)
     }
+    
+    func removeLocation(_ location: Location) throws {
+        var locations = try decode([Location].self, forKey: Keys.locations) ?? []
+        
+        if let locationsData = data(forKey: Keys.locations) {
+            locations = (try? JSONDecoder().decode([Location].self, from: locationsData)) ?? []
+        }
+        
+        locations.removeAll { $0.id == location.id }
+        
+        try encode(locations, forKey: Keys.locations)
+    }
 }
 
 fileprivate extension UserDefaults {
