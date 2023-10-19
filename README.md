@@ -8,6 +8,8 @@ __SwiftUI__
 
 __MVVM__
 
+__Unit Tests__
+
 __Combine__
 
 __Concurrency (Async Await)__
