@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Swinject
 
 @MainActor
 final class LocationViewModel: ObservableObject {
@@ -38,7 +39,7 @@ final class LocationViewModel: ObservableObject {
             let data = try await weatherService.weather(for: location)
             
             state = .data(
-                currentConditionsViewModel: .init(currently: data.currently),
+                currentConditionsViewModel: .init(location: location, store: Container.store, currently: data.currently),
                 forecastViewModel: .init(forecast: data.forecast)
             )
             

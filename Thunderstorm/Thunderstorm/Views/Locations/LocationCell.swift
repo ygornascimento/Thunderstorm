@@ -25,6 +25,7 @@ struct LocationCell: View {
                 
                 if let sumary = viewModel.sumary {
                     Text(sumary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
             
