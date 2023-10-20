@@ -46,6 +46,9 @@
 		1ECB3E482AE0A8920051D18D /* Container+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E472AE0A8920051D18D /* Container+Helpers.swift */; };
 		1ECB3E4A2AE27C4C0051D18D /* AddLocationCellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */; };
 		1ECB3E4D2AE27EC70051D18D /* Location+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E4C2AE27EC70051D18D /* Location+Mocks.swift */; };
+		1ECB3E502AE289E80051D18D /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E4F2AE289E80051D18D /* MockStore.swift */; };
+		1ECB3E522AE28BBF0051D18D /* MockGeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */; };
+		1ECB3E542AE28D0A0051D18D /* AddLocationViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */; };
 		1EF180062AB5B35100E165C9 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180052AB5B35100E165C9 /* AddLocationView.swift */; };
 		1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */; };
 		1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */; };
@@ -105,6 +108,9 @@
 		1ECB3E472AE0A8920051D18D /* Container+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Helpers.swift"; sourceTree = "<group>"; };
 		1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModelTest.swift; sourceTree = "<group>"; };
 		1ECB3E4C2AE27EC70051D18D /* Location+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Mocks.swift"; sourceTree = "<group>"; };
+		1ECB3E4F2AE289E80051D18D /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
+		1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGeocodingClient.swift; sourceTree = "<group>"; };
+		1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModelTest.swift; sourceTree = "<group>"; };
 		1EF180052AB5B35100E165C9 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 		1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		1E1184E42ADC613100A8FE6C /* ThunderstormTests */ = {
 			isa = PBXGroup;
 			children = (
+				1ECB3E4E2AE289CB0051D18D /* Mocks */,
 				1ECB3E4B2AE27EA90051D18D /* Extensions */,
 				1E1184EC2ADC614900A8FE6C /* Cases */,
 			);
@@ -167,6 +174,7 @@
 			children = (
 				1E1184ED2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift */,
 				1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */,
+				1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -324,6 +332,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1ECB3E4E2AE289CB0051D18D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1ECB3E4F2AE289E80051D18D /* MockStore.swift */,
+				1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		1EF180042AB5B32800E165C9 /* AddLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +480,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1184EE2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift in Sources */,
+				1ECB3E542AE28D0A0051D18D /* AddLocationViewModelTest.swift in Sources */,
+				1ECB3E502AE289E80051D18D /* MockStore.swift in Sources */,
+				1ECB3E522AE28BBF0051D18D /* MockGeocodingClient.swift in Sources */,
 				1ECB3E4A2AE27C4C0051D18D /* AddLocationCellViewModelTest.swift in Sources */,
 				1ECB3E4D2AE27EC70051D18D /* Location+Mocks.swift in Sources */,
 			);
