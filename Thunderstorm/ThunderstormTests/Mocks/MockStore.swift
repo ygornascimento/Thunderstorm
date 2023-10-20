@@ -10,7 +10,7 @@ import Combine
 @testable import Thunderstorm
 
 final class MockStore: Store {
-    @Published private var locations: [Location]
+    @Published private(set) var locations: [Location]
     
     init(locations: [Location] = []) {
         self.locations = locations
