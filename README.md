@@ -1,4 +1,4 @@
-# Thunderstorm (Weather App) - Work in Progress
+# Thunderstorm (Weather App)
 
 App used to learn and improve the following hard skills:
 
