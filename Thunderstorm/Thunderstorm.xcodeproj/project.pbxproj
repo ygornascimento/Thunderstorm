@@ -28,7 +28,7 @@
 		1E4C097C2AA542490094244C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C097B2AA542490094244C /* LocationView.swift */; };
 		1E4C097F2AA542B20094244C /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C097E2AA542B20094244C /* LocationViewModel.swift */; };
 		1E4C09832AA544360094244C /* CurrentConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09822AA544360094244C /* CurrentConditionsView.swift */; };
-		1E4C09852AA544420094244C /* CurrentConditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09842AA544420094244C /* CurrentConditionViewModel.swift */; };
+		1E4C09852AA544420094244C /* CurrentConditionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09842AA544420094244C /* CurrentConditionsViewModel.swift */; };
 		1E4C09872AA544BE0094244C /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09862AA544BE0094244C /* ForecastView.swift */; };
 		1E4C09892AA544C90094244C /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C09882AA544C90094244C /* ForecastViewModel.swift */; };
 		1E4C098B2AA553140094244C /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4C098A2AA553140094244C /* ForecastCell.swift */; };
@@ -41,6 +41,14 @@
 		1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9927042ACB58CF00F9103C /* AddLocationCell.swift */; };
 		1E9927072ACB5DB400F9103C /* AddLocationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9927062ACB5DB400F9103C /* AddLocationCellViewModel.swift */; };
 		1EA416792AB46B17003E5ADD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA416782AB46B17003E5ADD /* Colors.swift */; };
+		1ECB3E442AE0A82C0051D18D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 1ECB3E432AE0A82C0051D18D /* Swinject */; };
+		1ECB3E462AE0A82C0051D18D /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 1ECB3E452AE0A82C0051D18D /* Swinject-Dynamic */; };
+		1ECB3E482AE0A8920051D18D /* Container+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E472AE0A8920051D18D /* Container+Helpers.swift */; };
+		1ECB3E4A2AE27C4C0051D18D /* AddLocationCellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */; };
+		1ECB3E4D2AE27EC70051D18D /* Location+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E4C2AE27EC70051D18D /* Location+Mocks.swift */; };
+		1ECB3E502AE289E80051D18D /* MockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E4F2AE289E80051D18D /* MockStore.swift */; };
+		1ECB3E522AE28BBF0051D18D /* MockGeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */; };
+		1ECB3E542AE28D0A0051D18D /* AddLocationViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */; };
 		1EF180062AB5B35100E165C9 /* AddLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180052AB5B35100E165C9 /* AddLocationView.swift */; };
 		1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */; };
 		1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */; };
@@ -84,7 +92,7 @@
 		1E4C097B2AA542490094244C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		1E4C097E2AA542B20094244C /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		1E4C09822AA544360094244C /* CurrentConditionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsView.swift; sourceTree = "<group>"; };
-		1E4C09842AA544420094244C /* CurrentConditionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionViewModel.swift; sourceTree = "<group>"; };
+		1E4C09842AA544420094244C /* CurrentConditionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentConditionsViewModel.swift; sourceTree = "<group>"; };
 		1E4C09862AA544BE0094244C /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		1E4C09882AA544C90094244C /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		1E4C098A2AA553140094244C /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
@@ -97,6 +105,12 @@
 		1E9927042ACB58CF00F9103C /* AddLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCell.swift; sourceTree = "<group>"; };
 		1E9927062ACB5DB400F9103C /* AddLocationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModel.swift; sourceTree = "<group>"; };
 		1EA416782AB46B17003E5ADD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1ECB3E472AE0A8920051D18D /* Container+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Container+Helpers.swift"; sourceTree = "<group>"; };
+		1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationCellViewModelTest.swift; sourceTree = "<group>"; };
+		1ECB3E4C2AE27EC70051D18D /* Location+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Mocks.swift"; sourceTree = "<group>"; };
+		1ECB3E4F2AE289E80051D18D /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
+		1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGeocodingClient.swift; sourceTree = "<group>"; };
+		1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModelTest.swift; sourceTree = "<group>"; };
 		1EF180052AB5B35100E165C9 /* AddLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationView.swift; sourceTree = "<group>"; };
 		1EF180082AB5B3E300E165C9 /* AddLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewModel.swift; sourceTree = "<group>"; };
 		1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Helpers.swift"; sourceTree = "<group>"; };
@@ -117,6 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ECB3E442AE0A82C0051D18D /* Swinject in Frameworks */,
+				1ECB3E462AE0A82C0051D18D /* Swinject-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +162,8 @@
 		1E1184E42ADC613100A8FE6C /* ThunderstormTests */ = {
 			isa = PBXGroup;
 			children = (
+				1ECB3E4E2AE289CB0051D18D /* Mocks */,
+				1ECB3E4B2AE27EA90051D18D /* Extensions */,
 				1E1184EC2ADC614900A8FE6C /* Cases */,
 			);
 			path = ThunderstormTests;
@@ -155,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				1E1184ED2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift */,
+				1ECB3E492AE27C4C0051D18D /* AddLocationCellViewModelTest.swift */,
+				1ECB3E532AE28D0A0051D18D /* AddLocationViewModelTest.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -276,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				1E4C097E2AA542B20094244C /* LocationViewModel.swift */,
-				1E4C09842AA544420094244C /* CurrentConditionViewModel.swift */,
+				1E4C09842AA544420094244C /* CurrentConditionsViewModel.swift */,
 				1E4C09882AA544C90094244C /* ForecastViewModel.swift */,
 				1E4C098C2AA55C960094244C /* ForecastCellViewModel.swift */,
 			);
@@ -299,8 +319,26 @@
 			children = (
 				1E7529072ACD9B8F00B20066 /* CLGeocoder+Geocoder.swift */,
 				1EFD9D762AD9D2660024D091 /* UserDefaults+Helpers.swift */,
+				1ECB3E472AE0A8920051D18D /* Container+Helpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1ECB3E4B2AE27EA90051D18D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1ECB3E4C2AE27EC70051D18D /* Location+Mocks.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1ECB3E4E2AE289CB0051D18D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1ECB3E4F2AE289E80051D18D /* MockStore.swift */,
+				1ECB3E512AE28BBF0051D18D /* MockGeocodingClient.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		1EF180042AB5B32800E165C9 /* AddLocation */ = {
@@ -366,6 +404,10 @@
 			dependencies = (
 			);
 			name = Thunderstorm;
+			packageProductDependencies = (
+				1ECB3E432AE0A82C0051D18D /* Swinject */,
+				1ECB3E452AE0A82C0051D18D /* Swinject-Dynamic */,
+			);
 			productName = Thunderstorm;
 			productReference = 1E4C09592AA3B04B0094244C /* Thunderstorm.app */;
 			productType = "com.apple.product-type.application";
@@ -378,7 +420,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					1E1184E22ADC613100A8FE6C = {
 						CreatedOnToolsVersion = 15.0;
@@ -399,6 +441,9 @@
 				Base,
 			);
 			mainGroup = 1E4C09502AA3B04B0094244C;
+			packageReferences = (
+				1ECB3E422AE0A82B0051D18D /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 1E4C095A2AA3B04B0094244C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +480,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E1184EE2ADC619A00A8FE6C /* ClearSkyFormatterTests.swift in Sources */,
+				1ECB3E542AE28D0A0051D18D /* AddLocationViewModelTest.swift in Sources */,
+				1ECB3E502AE289E80051D18D /* MockStore.swift in Sources */,
+				1ECB3E522AE28BBF0051D18D /* MockGeocodingClient.swift in Sources */,
+				1ECB3E4A2AE27C4C0051D18D /* AddLocationCellViewModelTest.swift in Sources */,
+				1ECB3E4D2AE27EC70051D18D /* Location+Mocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E9927052ACB58CF00F9103C /* AddLocationCell.swift in Sources */,
+				1ECB3E482AE0A8920051D18D /* Container+Helpers.swift in Sources */,
 				1EFD9D7C2AD9EA0C0024D091 /* UserDefaults+Store.swift in Sources */,
 				1EFD9D772AD9D2660024D091 /* UserDefaults+Helpers.swift in Sources */,
 				1E7529012ACD7C9C00B20066 /* GeocodePreviewClient.swift in Sources */,
@@ -462,7 +513,7 @@
 				1E1184DC2ADC1C2B00A8FE6C /* Configuration.swift in Sources */,
 				1E1184D52ADB3B1F00A8FE6C /* WeatherService.swift in Sources */,
 				1E7529052ACD98E500B20066 /* Geocoder.swift in Sources */,
-				1E4C09852AA544420094244C /* CurrentConditionViewModel.swift in Sources */,
+				1E4C09852AA544420094244C /* CurrentConditionsViewModel.swift in Sources */,
 				1EFD9D7E2AD9EAB60024D091 /* PreviewStore.swift in Sources */,
 				1E1184D72ADB3C8500A8FE6C /* WeatherClient.swift in Sources */,
 				1EF180092AB5B3E300E165C9 /* AddLocationViewModel.swift in Sources */,
@@ -546,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -606,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -662,7 +715,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
-				CLEAR_SKY_BASE_URL = "https//cocoacasts.com/clearsky";
+				CLEAR_SKY_BASE_URL = "https://cocoacasts.com/clearsky";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
@@ -670,6 +723,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Thunderstorm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Thunderstorm;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -694,7 +748,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLEAR_SKY_API_KEY = tnperxfip8renk2hlzcccwetbnesby;
-				CLEAR_SKY_BASE_URL = "https//cocoacasts.com/clearsky";
+				CLEAR_SKY_BASE_URL = "https://cocoacasts.com/clearsky";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Thunderstorm/Preview Content\"";
@@ -702,6 +756,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Thunderstorm/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Thunderstorm;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -751,6 +806,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1ECB3E422AE0A82B0051D18D /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ECB3E432AE0A82C0051D18D /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ECB3E422AE0A82B0051D18D /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		1ECB3E452AE0A82C0051D18D /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ECB3E422AE0A82B0051D18D /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E4C09512AA3B04B0094244C /* Project object */;
 }

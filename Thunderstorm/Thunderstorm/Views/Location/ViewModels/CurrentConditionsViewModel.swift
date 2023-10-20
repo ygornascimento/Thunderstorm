@@ -8,7 +8,10 @@
 import Foundation
 
 
-struct CurrentConditionViewModel {
+struct CurrentConditionsViewModel {
+    
+    private let location: Location
+    private let store: Store
     
     private let currently: WeatherData.CurrentConditions
     private let measurementFormatter = ClearSkyFormatter()
@@ -26,7 +29,17 @@ struct CurrentConditionViewModel {
         measurementFormatter.formatTemperature(currently.temperature)
     }
     
-    init(currently: WeatherData.CurrentConditions) {
+    init(location: Location, store: Store, currently: WeatherData.CurrentConditions) {
+        self.location = location
+        self.store = store
         self.currently = currently
+    }
+    
+    func delete() {
+        do {
+            try store.removeLocation(location)
+        } catch {
+            print("Unable to Remove Location\(error)")
+        }
     }
 }

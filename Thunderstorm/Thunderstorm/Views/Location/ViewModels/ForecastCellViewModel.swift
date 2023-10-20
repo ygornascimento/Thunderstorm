@@ -60,7 +60,7 @@ struct ForecastCellViewModel: Identifiable {
     }
     
     var highTemperature: String {
-        measurementFormatter.formatTemperature(dayConditions.temperatureHight)
+        measurementFormatter.formatTemperature(dayConditions.temperatureHigh)
     }
     
     init(dayConditions: WeatherData.DayConditions) {

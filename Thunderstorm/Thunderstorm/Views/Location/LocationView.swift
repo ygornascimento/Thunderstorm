@@ -11,16 +11,27 @@ struct LocationView: View {
     @ObservedObject var viewModel: LocationViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 0.0) {
-            if let currentConditionsViewModel = viewModel.currentConditionsViewModel,
-               let forecastViewModel = viewModel.forecastViewModel {
-                CurrentConditionsView(viewModel: currentConditionsViewModel)
-                Divider()
-                ForecastView(viewModel: forecastViewModel)
-            } else {
+            switch viewModel.state {
+            case .fetching:
                 ProgressView()
+            case let .data(
+                currentConditionsViewModel: currentConditionsViewModel, forecastViewModel: forecastViewModel
+            ):
+                CurrentConditionsView(
+                    viewModel: currentConditionsViewModel
+                )
+                
+                Divider()
+                
+                ForecastView(
+                    viewModel: forecastViewModel
+                )
+            case .error(message: let message):
+                Text(message)
+                    .padding()
+                    .foregroundColor(.accentColor)
+                    .multilineTextAlignment(.center)
             }
-            
-            
         }
         .navigationTitle(viewModel.locationName)
         .task {
@@ -31,9 +42,19 @@ struct LocationView: View {
 
 struct LocationView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            LocationView(viewModel: .init(location: .preview,
-                                         weatherService: WeatherPreviewClient()))
+        Group {
+            NavigationView {
+                LocationView(viewModel: .init(
+                    location: .preview,
+                    weatherService: WeatherPreviewClient()))
+            }
+            
+            NavigationView {
+                LocationView(
+                    viewModel: .init(
+                        location: .preview,
+                        weatherService: WeatherPreviewClient(result: .failure(.init()))))
+            }
         }
     }
 }
